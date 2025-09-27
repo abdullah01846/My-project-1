@@ -61,57 +61,83 @@
     letter-spacing: 1.2px;
     text-align: justify;
  }
-
-
-
-               /* Skills Section */
-.skills_section{
-    margin: 50px;
-
-}
-.skills_section h3{
-    font-size: 30px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid blueviolet;
-    
-}
-
-.skills_section ul{
-    line-height: 20px;
-    letter-spacing: 1.2px;
-    margin-left: 30px;
-}
-
-                   /* footer section */
-footer{
-    text-align: end;
-    margin-bottom: 50px;
-} 
-
-.btn_container{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.btn{
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: blueviolet;
-    font-size: 16px;
-    font-weight: 600;
-    color: aliceblue;
-    transition: all;
-    transition-duration: 1s;
-    transition-delay: 0.1s;
-    transition-timing-function: ease-in-out;
-    
-}
-.btn:hover{
-    background-color: black;
-    color: aqua;
  
+ 
+ 
+ /* Skills Section */
+ .skills_section{
+     margin: 50px;
+     
+    }
+    .skills_section h3{
+        font-size: 30px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid blueviolet;
+        
+    }
     
+    .skills_section ul{
+        line-height: 20px;
+        letter-spacing: 1.2px;
+        margin-left: 30px;
+    }
+    
+    /* footer section */
+    footer{
+        text-align: end;
+        margin-bottom: 50px;
+    } 
+    
+    .btn_container{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: blueviolet;
+        font-size: 16px;
+        font-weight: 600;
+        color: aliceblue;
+        transition: all;
+        transition-duration: 1s;
+        transition-delay: 0.1s;
+        transition-timing-function: ease-in-out;
+        
+        
+        /* pseudo class */
+    }
+    .btn:hover{
+        background-color: black;
+        color: aqua;
+        
+        
+    }
+    .btn::after{
+        content: '*' ;
+    }
+    
+    ::selection{
+        color: aquamarine;
+        background-color: blueviolet;
+    }
+    
+     .about_section p::first-letter{
+        font-size: 20px;
+     }
+    p::first-line{
+        background-color: rgb(162, 31, 167);
+        color: aqua;
+}
+.important::after{
+    content: 'important';
+    background-color: red;
+    color: aliceblue;
+    padding: 0.2rem;
+    font-size: 0.4rem;
+
 }
