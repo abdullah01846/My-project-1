@@ -24,7 +24,7 @@
 
  .top_section
  img{
-    width: 300px;
+    width: 330px;
     height: 330px;
     border-radius: 0px 70px 0px 50px;
     
@@ -112,5 +112,6 @@ footer{
 .btn:hover{
     background-color: black;
     color: aqua;
+ 
     
 }
